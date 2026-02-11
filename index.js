@@ -8,6 +8,12 @@ emotionRadios.addEventListener('change', highlightCheckedOption)
 
 getImageBtn.addEventListener('click', renderCat)
 
+memeModalCloseBtn.addEventListener('click', closeModal)
+
+function closeModal(){
+    memeModal.style.display = 'none'
+}
+
 function highlightCheckedOption(e){
     const radios = document.getElementsByClassName('radio')
     for (let radio of radios){
